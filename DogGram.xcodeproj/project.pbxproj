@@ -17,6 +17,7 @@
 		FE58F5F5297DC204007D53AC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F4297DC204007D53AC /* PostView.swift */; };
 		FE58F5F8297DD990007D53AC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F7297DD990007D53AC /* PostModel.swift */; };
 		FE58F5FA297DDF9C007D53AC /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F9297DDF9C007D53AC /* PostArrayObject.swift */; };
+		FE58F5FC297DE3BD007D53AC /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5FB297DE3BD007D53AC /* CommentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FE58F5F4297DC204007D53AC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		FE58F5F7297DD990007D53AC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		FE58F5F9297DDF9C007D53AC /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		FE58F5FB297DE3BD007D53AC /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				FE58F5DC297CBA91007D53AC /* DogGramApp.swift */,
 				FE58F5DE297CBA91007D53AC /* ContentView.swift */,
 				FE58F5F2297DBB1F007D53AC /* FeedView.swift */,
+				FE58F5FB297DE3BD007D53AC /* CommentsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */,
 				FE58F5FA297DDF9C007D53AC /* PostArrayObject.swift in Sources */,
 				FE58F5F5297DC204007D53AC /* PostView.swift in Sources */,
+				FE58F5FC297DE3BD007D53AC /* CommentsView.swift in Sources */,
 				FE58F5DD297CBA91007D53AC /* DogGramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
