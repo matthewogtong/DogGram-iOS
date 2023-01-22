@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PostView: View {
+    
+    @State var post: PostModel
+    
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             
@@ -19,7 +22,7 @@ struct PostView: View {
                     .frame(width: 30, height: 30, alignment: .center)
                     .cornerRadius(15)
                 
-                Text("User name here")
+                Text(post.username)
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(.primary)
@@ -52,19 +55,24 @@ struct PostView: View {
             }
             .padding(.all, 6)
             
-            HStack {
-                Text("This is the caption for the photo!")
-                
-                Spacer(minLength: 0)
+            if let caption = post.caption {
+                HStack {
+                    Text(caption)
+                    
+                    Spacer(minLength: 0)
+                }
+                .padding(.all, 6)
             }
-            .padding(.all, 6)
         }
     }
 }
 
 struct PostView_Previews: PreviewProvider {
+    
+    static var post: PostModel = PostModel(postID: "", userID: "", username: "matt", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
+    
     static var previews: some View {
-        PostView()
+        PostView(post: post)
             .previewLayout(.sizeThatFits)
     }
 }

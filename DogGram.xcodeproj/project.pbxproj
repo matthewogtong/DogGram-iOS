@@ -15,6 +15,8 @@
 		FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F0297D9E09007D53AC /* Extensions.swift */; };
 		FE58F5F3297DBB1F007D53AC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F2297DBB1F007D53AC /* FeedView.swift */; };
 		FE58F5F5297DC204007D53AC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F4297DC204007D53AC /* PostView.swift */; };
+		FE58F5F8297DD990007D53AC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F7297DD990007D53AC /* PostModel.swift */; };
+		FE58F5FA297DDF9C007D53AC /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F9297DDF9C007D53AC /* PostArrayObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		FE58F5F0297D9E09007D53AC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FE58F5F2297DBB1F007D53AC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		FE58F5F4297DC204007D53AC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		FE58F5F7297DD990007D53AC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FE58F5F9297DDF9C007D53AC /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		FE58F5DB297CBA91007D53AC /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
+				FE58F5F6297DD980007D53AC /* Model */,
 				FE58F5EF297D9DD4007D53AC /* Helpers */,
 				FE58F5EC297D9D40007D53AC /* Views */,
 				FE58F5E0297CBA92007D53AC /* Assets.xcassets */,
@@ -109,6 +114,15 @@
 				FE58F5F0297D9E09007D53AC /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FE58F5F6297DD980007D53AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE58F5F7297DD990007D53AC /* PostModel.swift */,
+				FE58F5F9297DDF9C007D53AC /* PostArrayObject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE58F5F3297DBB1F007D53AC /* FeedView.swift in Sources */,
+				FE58F5F8297DD990007D53AC /* PostModel.swift in Sources */,
 				FE58F5DF297CBA91007D53AC /* ContentView.swift in Sources */,
 				FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */,
+				FE58F5FA297DDF9C007D53AC /* PostArrayObject.swift in Sources */,
 				FE58F5F5297DC204007D53AC /* PostView.swift in Sources */,
 				FE58F5DD297CBA91007D53AC /* DogGramApp.swift in Sources */,
 			);
