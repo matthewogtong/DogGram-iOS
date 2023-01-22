@@ -12,6 +12,7 @@
 		FE58F5E1297CBA92007D53AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE58F5E0297CBA92007D53AC /* Assets.xcassets */; };
 		FE58F5E4297CBA92007D53AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE58F5E3297CBA92007D53AC /* Preview Assets.xcassets */; };
 		FE58F5EB297CD4DB007D53AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58F5EA297CD4DB007D53AC /* LaunchScreen.storyboard */; };
+		FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5F0297D9E09007D53AC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FE58F5E0297CBA92007D53AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE58F5E3297CBA92007D53AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE58F5EA297CD4DB007D53AC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE58F5F0297D9E09007D53AC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 		FE58F5DB297CBA91007D53AC /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
-				FE58F5DC297CBA91007D53AC /* DogGramApp.swift */,
-				FE58F5DE297CBA91007D53AC /* ContentView.swift */,
+				FE58F5EF297D9DD4007D53AC /* Helpers */,
+				FE58F5EC297D9D40007D53AC /* Views */,
 				FE58F5E0297CBA92007D53AC /* Assets.xcassets */,
 				FE58F5E2297CBA92007D53AC /* Preview Content */,
 				FE58F5EA297CD4DB007D53AC /* LaunchScreen.storyboard */,
@@ -68,6 +70,39 @@
 				FE58F5E3297CBA92007D53AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE58F5EC297D9D40007D53AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE58F5ED297D9D4D007D53AC /* Subviews */,
+				FE58F5EE297D9D54007D53AC /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE58F5ED297D9D4D007D53AC /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		FE58F5EE297D9D54007D53AC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FE58F5DC297CBA91007D53AC /* DogGramApp.swift */,
+				FE58F5DE297CBA91007D53AC /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FE58F5EF297D9DD4007D53AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE58F5F0297D9E09007D53AC /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE58F5DF297CBA91007D53AC /* ContentView.swift in Sources */,
+				FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */,
 				FE58F5DD297CBA91007D53AC /* DogGramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
