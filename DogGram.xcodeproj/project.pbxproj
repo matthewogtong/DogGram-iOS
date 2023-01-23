@@ -22,6 +22,7 @@
 		FE58F604297DFD9F007D53AC /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F603297DFD9F007D53AC /* CommentModel.swift */; };
 		FE58F606297E0960007D53AC /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58F605297E0960007D53AC /* BrowseView.swift */; };
 		FE9A10EC297E0A4C00FE48B1 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10EB297E0A4C00FE48B1 /* CarouselView.swift */; };
+		FE9A10EE297EF9E100FE48B1 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10ED297EF9E100FE48B1 /* ImageGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FE58F603297DFD9F007D53AC /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		FE58F605297E0960007D53AC /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		FE9A10EB297E0A4C00FE48B1 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		FE9A10ED297EF9E100FE48B1 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FE58F5F4297DC204007D53AC /* PostView.swift */,
 				FE58F5FD297DF726007D53AC /* MessageView.swift */,
 				FE9A10EB297E0A4C00FE48B1 /* CarouselView.swift */,
+				FE9A10ED297EF9E100FE48B1 /* ImageGridView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FE58F5FE297DF726007D53AC /* MessageView.swift in Sources */,
 				FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */,
 				FE58F5FA297DDF9C007D53AC /* PostArrayObject.swift in Sources */,
+				FE9A10EE297EF9E100FE48B1 /* ImageGridView.swift in Sources */,
 				FE58F5F5297DC204007D53AC /* PostView.swift in Sources */,
 				FE58F606297E0960007D53AC /* BrowseView.swift in Sources */,
 				FE58F604297DFD9F007D53AC /* CommentModel.swift in Sources */,
