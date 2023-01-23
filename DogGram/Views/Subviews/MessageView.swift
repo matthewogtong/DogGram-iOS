@@ -16,7 +16,7 @@ struct MessageView: View {
         HStack {
             
             // MARK: PROFILE IMAGE
-            Image("dog1")
+            Image("nimbus1")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 40, alignment: .center)

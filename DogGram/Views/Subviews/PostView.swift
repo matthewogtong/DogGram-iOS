@@ -16,7 +16,7 @@ struct PostView: View {
             
             // MARK: HEADER
             HStack {
-                Image("dog1")
+                Image("nimbus1")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 30, height: 30, alignment: .center)
@@ -35,7 +35,7 @@ struct PostView: View {
             .padding(.all, 6)
             
             // MARK: IMAGE
-            Image("dog1")
+            Image("nimbus2")
                 .resizable()
                 .scaledToFit()
             
