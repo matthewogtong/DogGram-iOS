@@ -77,7 +77,7 @@ struct PostImageView: View {
 
 struct PostImageView_Previews: PreviewProvider {
     
-    @State static var image = UIImage(named: "nimbus1")
+    @State static var image = UIImage(named: "nimbus1")!
     
     static var previews: some View {
         PostImageView(imageSelected: $image)
