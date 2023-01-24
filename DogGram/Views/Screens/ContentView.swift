@@ -13,18 +13,18 @@ struct ContentView: View {
             NavigationView {
                 FeedView(posts: PostArrayObject(), title: "Feed")
             }
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Feed")
-                }
+            .tabItem {
+                Image(systemName: "book.fill")
+                Text("Feed")
+            }
             
             NavigationView {
-                BrowseView()                
+                BrowseView()
             }
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Browse")
-                }
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Browse")
+            }
             
             UploadView()
                 .tabItem {
@@ -32,11 +32,13 @@ struct ContentView: View {
                     Text("Upload")
                 }
             
-            Text("Screen 4")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
+            NavigationView {
+                ProfileView(profileDisplayName: "My Profile", isMyProfile: true, profileUserID: "")
+            }
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("Profile")
+            }
         }
         .accentColor(Color.MyTheme.purpleColor)
     }
