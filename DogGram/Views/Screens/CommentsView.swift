@@ -25,7 +25,7 @@ struct CommentsView: View {
             
             HStack {
                 
-                Image("dog1")
+                Image("nimbus1")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40, alignment: .center)

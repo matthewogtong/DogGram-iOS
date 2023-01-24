@@ -12,7 +12,6 @@ class PostArrayObject: ObservableObject {
     @Published var dataArray = [PostModel]()
     
     init() {
-        
         print("FETCH FROM DATABASE HERE")
         
         let post1 = PostModel(postID: "", userID: "", username: "matt", caption: "This is a caption.", dateCreated: Date(), likeCount: 0, likedByUser: false)
@@ -27,7 +26,11 @@ class PostArrayObject: ObservableObject {
         self.dataArray.append(post2)
         self.dataArray.append(post3)
         self.dataArray.append(post4)
-        
+    }
+    
+    /// USED FOR SINGLE POST SELECTION
+    init(post: PostModel) {
+        self.dataArray.append(post)
     }
     
 }
