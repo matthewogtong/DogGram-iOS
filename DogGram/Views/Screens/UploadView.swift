@@ -50,6 +50,9 @@ struct UploadView: View {
                 .scaledToFit()
                 .frame(width: 100, height: 100, alignment: .center)
                 .shadow(radius: 12)
+                .fullScreenCover(isPresented: .constant(true)) {
+                    
+                }
         }
         .edgesIgnoringSafeArea(.top)
     }
