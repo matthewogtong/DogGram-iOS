@@ -31,6 +31,7 @@
 		FE9A10FA29809A2900FE48B1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10F929809A2900FE48B1 /* SettingsView.swift */; };
 		FE9A10FC2980A11D00FE48B1 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10FB2980A11D00FE48B1 /* SettingsLabelView.swift */; };
 		FE9A10FE2980C26300FE48B1 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10FD2980C26300FE48B1 /* SettingsRowView.swift */; };
+		FE9A11002981921000FE48B1 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		FE9A10F929809A2900FE48B1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FE9A10FB2980A11D00FE48B1 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		FE9A10FD2980C26300FE48B1 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				FE9A10F3297F6AC000FE48B1 /* PostImageView.swift */,
 				FE9A10F52980554300FE48B1 /* ProfileView.swift */,
 				FE9A10F929809A2900FE48B1 /* SettingsView.swift */,
+				FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				FE9A10EC297E0A4C00FE48B1 /* CarouselView.swift in Sources */,
 				FE58F5DD297CBA91007D53AC /* DogGramApp.swift in Sources */,
 				FE9A10FA29809A2900FE48B1 /* SettingsView.swift in Sources */,
+				FE9A11002981921000FE48B1 /* SettingsEditTextView.swift in Sources */,
 				FE9A10FE2980C26300FE48B1 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
