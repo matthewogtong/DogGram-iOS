@@ -48,7 +48,12 @@ struct SettingsView: View {
                         SettingsRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpleColor)
                     }
 
-                    SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpleColor)
+                    NavigationLink {
+                        SettingsEditImageView(title: "Profile Picture", description: "Your profile picture will appear on your profile and in your posts. Many users choose to use a photo of themselves or their dog.", selectedImage: UIImage(named: "nimbus1")!)
+                    } label: {
+                        SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpleColor)
+                    }
+
                     SettingsRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpleColor)
                 } label: {
                     SettingsLabelView(labelText: "Profile", labelImage: "person.fill")
@@ -57,9 +62,24 @@ struct SettingsView: View {
                 
                 // MARK: SECTION 3: APPLICATION
                 GroupBox {
-                    SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "folder.fill", text: "Terms & Conditions", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "globe", text: "DogGram's Website", color: Color.MyTheme.yellowColor)
+                    Button {
+                        openCustomURL(urlString: "https://www.google.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
+                    }
+
+                    Button {
+                        openCustomURL(urlString: "https://www.yahoo.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Terms & Conditions", color: Color.MyTheme.yellowColor)
+                    }
+
+                    Button {
+                        openCustomURL(urlString: "https://www.bing.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "globe", text: "DogGram's Website", color: Color.MyTheme.yellowColor)
+                    }
+                    
                 } label: {
                     SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
                 }
@@ -88,6 +108,16 @@ struct SettingsView: View {
             })
                                         .accentColor(.primary)
             )
+        }
+    }
+    
+    // MARK: FUNCTIONS
+    
+    func openCustomURL(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         }
     }
 }
