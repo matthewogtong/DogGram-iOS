@@ -33,6 +33,7 @@
 		FE9A10FE2980C26300FE48B1 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10FD2980C26300FE48B1 /* SettingsRowView.swift */; };
 		FE9A11002981921000FE48B1 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */; };
 		FE9A11022981C5A600FE48B1 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A11012981C5A600FE48B1 /* SettingsEditImageView.swift */; };
+		FE9A11042981D38700FE48B1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A11032981D38700FE48B1 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		FE9A10FD2980C26300FE48B1 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		FE9A11012981C5A600FE48B1 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
+		FE9A11032981D38700FE48B1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				FE9A10F929809A2900FE48B1 /* SettingsView.swift */,
 				FE9A10FF2981921000FE48B1 /* SettingsEditTextView.swift */,
 				FE9A11012981C5A600FE48B1 /* SettingsEditImageView.swift */,
+				FE9A11032981D38700FE48B1 /* SignUpView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				FE58F5F8297DD990007D53AC /* PostModel.swift in Sources */,
 				FE9A10FC2980A11D00FE48B1 /* SettingsLabelView.swift in Sources */,
 				FE9A10F4297F6AC000FE48B1 /* PostImageView.swift in Sources */,
+				FE9A11042981D38700FE48B1 /* SignUpView.swift in Sources */,
 				FE58F5DF297CBA91007D53AC /* ContentView.swift in Sources */,
 				FE58F5FE297DF726007D53AC /* MessageView.swift in Sources */,
 				FE58F5F1297D9E09007D53AC /* Extensions.swift in Sources */,
