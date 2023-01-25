@@ -18,16 +18,21 @@ struct PostView: View {
             // MARK: HEADER
             if showHeaderAndFooter {
                 HStack {
-                    Image("nimbus1")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 30, height: 30, alignment: .center)
-                        .cornerRadius(15)
                     
-                    Text(post.username)
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.primary)
+                    NavigationLink {
+                        ProfileView(profileDisplayName: post.username, isMyProfile: false, profileUserID: post.userID)
+                    } label: {
+                        Image("nimbus1")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .cornerRadius(15)
+                        
+                        Text(post.username)
+                            .font(.callout)
+                            .fontWeight(.medium)
+                            .foregroundColor(.primary)
+                    }
                     
                     Spacer()
                     
