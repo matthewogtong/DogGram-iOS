@@ -36,9 +36,24 @@ struct SettingsView: View {
                 
                 // MARK: SECTION 2: PROFILE
                 GroupBox {
-                    SettingsRowView(leftIcon: "pencil", text: "Display Name", color: Color.MyTheme.purpleColor)
-                    SettingsRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpleColor)
-                    SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpleColor)
+                    NavigationLink {
+                        SettingsEditTextView(submissionText: "Current display name", title: "Display Name", description: "You can edit your display name here. This will be seen by other users on your profile on your posts.", placeholder: "Your display name here...")
+                    } label: {
+                        SettingsRowView(leftIcon: "pencil", text: "Display Name", color: Color.MyTheme.purpleColor)
+                    }
+                    
+                    NavigationLink {
+                        SettingsEditTextView(submissionText: "Current bio here", title: "Profile Bio", description: "Your bio is a great place to let other users know a little about you. It will be shown on your profile only.", placeholder: "Your bio here...")
+                    } label: {
+                        SettingsRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpleColor)
+                    }
+
+                    NavigationLink {
+                        SettingsEditImageView(title: "Profile Picture", description: "Your profile picture will appear on your profile and in your posts. Many users choose to use a photo of themselves or their dog.", selectedImage: UIImage(named: "nimbus1")!)
+                    } label: {
+                        SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpleColor)
+                    }
+
                     SettingsRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpleColor)
                 } label: {
                     SettingsLabelView(labelText: "Profile", labelImage: "person.fill")
@@ -47,9 +62,24 @@ struct SettingsView: View {
                 
                 // MARK: SECTION 3: APPLICATION
                 GroupBox {
-                    SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "folder.fill", text: "Terms & Conditions", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "globe", text: "DogGram's Website", color: Color.MyTheme.yellowColor)
+                    Button {
+                        openCustomURL(urlString: "https://www.google.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
+                    }
+
+                    Button {
+                        openCustomURL(urlString: "https://www.yahoo.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Terms & Conditions", color: Color.MyTheme.yellowColor)
+                    }
+
+                    Button {
+                        openCustomURL(urlString: "https://www.bing.com")
+                    } label: {
+                        SettingsRowView(leftIcon: "globe", text: "DogGram's Website", color: Color.MyTheme.yellowColor)
+                    }
+                    
                 } label: {
                     SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
                 }
@@ -78,6 +108,16 @@ struct SettingsView: View {
             })
                                         .accentColor(.primary)
             )
+        }
+    }
+    
+    // MARK: FUNCTIONS
+    
+    func openCustomURL(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         }
     }
 }
