@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State var showOnboardingPart2: Bool = false
+    
     var body: some View {
         VStack(spacing: 10) {
             
@@ -32,7 +37,7 @@ struct OnboardingView: View {
                 .padding()
             
             Button {
-                print("heelo")
+                showOnboardingPart2.toggle()
             } label: {
                 SignInWithAppleButtonCustom()
                     .frame(height: 60)
@@ -40,7 +45,7 @@ struct OnboardingView: View {
             }
             
             Button {
-                print("heelo")
+                showOnboardingPart2.toggle()
             } label: {
                 HStack {
                     
@@ -60,11 +65,25 @@ struct OnboardingView: View {
             }
             .foregroundColor(Color.black)
             
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("Continue as guest".uppercased())
+                    .font(.headline)
+                    .fontWeight(.medium)
+                    .padding()
+            }
+            .foregroundColor(.black)
+
+            
         }
         .padding(.all, 20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.MyTheme.beigeColor)
         .edgesIgnoringSafeArea(.all)
+        .fullScreenCover(isPresented: $showOnboardingPart2) {
+            OnboardingViewPart2()
+        }
     }
 }
 

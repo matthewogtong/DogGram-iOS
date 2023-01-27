@@ -36,6 +36,7 @@
 		FE9A11042981D38700FE48B1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A11032981D38700FE48B1 /* SignUpView.swift */; };
 		FE9A1106298203A900FE48B1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1105298203A900FE48B1 /* OnboardingView.swift */; };
 		FE9A11082982055400FE48B1 /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A11072982055400FE48B1 /* SignInWithAppleButtonCustom.swift */; };
+		FE9A110A29834FFB00FE48B1 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A110929834FFB00FE48B1 /* OnboardingViewPart2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		FE9A11032981D38700FE48B1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FE9A1105298203A900FE48B1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE9A11072982055400FE48B1 /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
+		FE9A110929834FFB00FE48B1 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				FE9A11012981C5A600FE48B1 /* SettingsEditImageView.swift */,
 				FE9A11032981D38700FE48B1 /* SignUpView.swift */,
 				FE9A1105298203A900FE48B1 /* OnboardingView.swift */,
+				FE9A110929834FFB00FE48B1 /* OnboardingViewPart2.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				FE58F5DD297CBA91007D53AC /* DogGramApp.swift in Sources */,
 				FE9A10FA29809A2900FE48B1 /* SettingsView.swift in Sources */,
 				FE9A11002981921000FE48B1 /* SettingsEditTextView.swift in Sources */,
+				FE9A110A29834FFB00FE48B1 /* OnboardingViewPart2.swift in Sources */,
 				FE9A10FE2980C26300FE48B1 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
