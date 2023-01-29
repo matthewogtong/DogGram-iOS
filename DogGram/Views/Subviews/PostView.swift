@@ -10,6 +10,9 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostModel
+    @State var animateLike: Bool = false
+    @State var addHeartAnimationToView: Bool
+    
     var showHeaderAndFooter: Bool
     
     var body: some View {
@@ -43,16 +46,31 @@ struct PostView: View {
             }
             
             // MARK: IMAGE
-            Image("nimbus2")
-                .resizable()
-                .scaledToFit()
+            ZStack {
+                Image("nimbus2")
+                    .resizable()
+                    .scaledToFit()
+                
+                if addHeartAnimationToView {
+                    LikeAnimationView(animate: $animateLike)
+                }
+            }
             
             // MARK: FOOTER
             if showHeaderAndFooter {
                 HStack(alignment: .center, spacing: 20) {
                     
-                    Image(systemName: "heart")
-                        .font(.title3)
+                    Button {
+                        if post.likedByUser {
+                            unlikePost()
+                        } else {
+                            likePost()
+                        }
+                    } label: {
+                        Image(systemName: post.likedByUser ? "heart.fill" : "heart")
+                            .font(.title3)
+                    }
+                    .foregroundColor(post.likedByUser ? .red : .primary)
                     
                     // MARK: COMMENT ICON
                     NavigationLink {
@@ -81,6 +99,30 @@ struct PostView: View {
             }
         }
     }
+    
+    // MARK: FUNCTIONS
+    
+    func likePost() {
+        
+        // Update the local data
+        let updatedPost = PostModel(postID: post.postID, userID: post.userID, username: post.username, caption: post.caption, dateCreated: post.dateCreated, likeCount: post.likeCount + 1, likedByUser: true)
+        self.post = updatedPost
+        
+        animateLike = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            animateLike = false
+        }
+        
+    }
+    
+    func unlikePost() {
+        
+        // Update the local data
+        let updatedPost = PostModel(postID: post.postID, userID: post.userID, username: post.username, caption: post.caption, dateCreated: post.dateCreated, likeCount: post.likeCount - 1, likedByUser: false)
+        self.post = updatedPost
+        
+    }
+    
 }
 
 struct PostView_Previews: PreviewProvider {
@@ -88,7 +130,7 @@ struct PostView_Previews: PreviewProvider {
     static var post: PostModel = PostModel(postID: "", userID: "", username: "matt", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post, showHeaderAndFooter: true)
+        PostView(post: post, addHeartAnimationToView: true, showHeaderAndFooter: true)
             .previewLayout(.sizeThatFits)
     }
 }
