@@ -37,6 +37,7 @@
 		FE9A1106298203A900FE48B1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1105298203A900FE48B1 /* OnboardingView.swift */; };
 		FE9A11082982055400FE48B1 /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A11072982055400FE48B1 /* SignInWithAppleButtonCustom.swift */; };
 		FE9A110A29834FFB00FE48B1 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A110929834FFB00FE48B1 /* OnboardingViewPart2.swift */; };
+		FE9A110C2984935000FE48B1 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A110B2984935000FE48B1 /* LikeAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		FE9A1105298203A900FE48B1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FE9A11072982055400FE48B1 /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
 		FE9A110929834FFB00FE48B1 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
+		FE9A110B2984935000FE48B1 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				FE9A10FB2980A11D00FE48B1 /* SettingsLabelView.swift */,
 				FE9A10FD2980C26300FE48B1 /* SettingsRowView.swift */,
 				FE9A11072982055400FE48B1 /* SignInWithAppleButtonCustom.swift */,
+				FE9A110B2984935000FE48B1 /* LikeAnimationView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FE58F5F5297DC204007D53AC /* PostView.swift in Sources */,
 				FE9A10F62980554300FE48B1 /* ProfileView.swift in Sources */,
 				FE58F606297E0960007D53AC /* BrowseView.swift in Sources */,
+				FE9A110C2984935000FE48B1 /* LikeAnimationView.swift in Sources */,
 				FE58F604297DFD9F007D53AC /* CommentModel.swift in Sources */,
 				FE9A11022981C5A600FE48B1 /* SettingsEditImageView.swift in Sources */,
 				FE58F5FC297DE3BD007D53AC /* CommentsView.swift in Sources */,
