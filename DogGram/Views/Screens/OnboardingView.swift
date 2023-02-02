@@ -12,6 +12,7 @@ struct OnboardingView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @State var showOnboardingPart2: Bool = false
+    @State var showError: Bool = false
     
     var body: some View {
         VStack(spacing: 10) {
@@ -83,6 +84,9 @@ struct OnboardingView: View {
         .edgesIgnoringSafeArea(.all)
         .fullScreenCover(isPresented: $showOnboardingPart2) {
             OnboardingViewPart2()
+        }
+        .alert(isPresented: $showError) {
+            return Alert(title: Text("Error signing in!"))
         }
     }
 }
