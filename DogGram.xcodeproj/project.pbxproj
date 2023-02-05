@@ -47,6 +47,7 @@
 		FE9A111B2989E04200FE48B1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FE9A111A2989E04200FE48B1 /* FirebaseStorage */; };
 		FE9A111E298B558400FE48B1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FE9A111D298B558400FE48B1 /* GoogleSignIn */; };
 		FE9A1120298B558400FE48B1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FE9A111F298B558400FE48B1 /* GoogleSignInSwift */; };
+		FEE1636F298F2D330062D792 /* SignInWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1636E298F2D330062D792 /* SignInWithGoogle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		FE9A110B2984935000FE48B1 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		FE9A110D2989DAD900FE48B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE9A1121298B559F00FE48B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FEE1636E298F2D330062D792 /* SignInWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		FE58F5DB297CBA91007D53AC /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
+				FEE1636C298F2D160062D792 /* Services */,
 				FE9A1121298B559F00FE48B1 /* Info.plist */,
 				FE58F5F6297DD980007D53AC /* Model */,
 				FE58F5EF297D9DD4007D53AC /* Helpers */,
@@ -207,6 +210,22 @@
 				FE58F603297DFD9F007D53AC /* CommentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FEE1636C298F2D160062D792 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEE1636D298F2D1F0062D792 /* SignInProviders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEE1636D298F2D1F0062D792 /* SignInProviders */ = {
+			isa = PBXGroup;
+			children = (
+				FEE1636E298F2D330062D792 /* SignInWithGoogle.swift */,
+			);
+			path = SignInProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +318,7 @@
 				FE9A11082982055400FE48B1 /* SignInWithAppleButtonCustom.swift in Sources */,
 				FE58F5F8297DD990007D53AC /* PostModel.swift in Sources */,
 				FE9A10FC2980A11D00FE48B1 /* SettingsLabelView.swift in Sources */,
+				FEE1636F298F2D330062D792 /* SignInWithGoogle.swift in Sources */,
 				FE9A10F4297F6AC000FE48B1 /* PostImageView.swift in Sources */,
 				FE9A11042981D38700FE48B1 /* SignUpView.swift in Sources */,
 				FE58F5DF297CBA91007D53AC /* ContentView.swift in Sources */,
